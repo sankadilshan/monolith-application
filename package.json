@@ -8,7 +8,8 @@
     "node": ">=14.0.0 <=20"
   },
   "scripts": {
-    "start": "nodemon index.js",
+    "start":"concurrently \"nodemon index.js\" \"node utils/launch.js\"",
+    "index": "nodemon index.js",
     "launch": "node utils/launch.js",
     "postinstall": "npm run install-services",
     "install-services": "node utils/install.js",
