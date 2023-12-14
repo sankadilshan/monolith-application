@@ -5,19 +5,19 @@ concurrently(
     {
       command: 'npm start',
       name: 'accounts',
-      cwd: path.resolve(__dirname, '../../services/accounts'),
+      cwd: path.resolve(__dirname, '../services/accounts'),
       prefixColor: 'blue',
     },
     {
       command: 'npm start',
       name: 'listings',
-      cwd: path.resolve(__dirname, '../../services/listings'),
+      cwd: path.resolve(__dirname, '../services/listings'),
       prefixColor: 'magenta',
     },
     {
       command: 'npm run booking:update',
       name: 'bookings',
-      cwd: path.resolve(__dirname, '../../services/bookings'),
+      cwd: path.resolve(__dirname, '../services/bookings'),
       prefixColor: 'green',
     },
   ],
